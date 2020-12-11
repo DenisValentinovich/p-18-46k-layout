@@ -223,7 +223,49 @@ body {
     background-color: #f9f9f9;
     padding-bottom: 90px;
 }
+/* BLOCK CLIENTS */
+.clients {
+    padding-top: 90px;
+}
+.message {
+    display:flex;
+    align-items: center;
+}
+.message--right {
+    flex-direction: row-reverse;
+}
+.message__ava {
+    width: 220px;
+    height: 220px;
+    background-color: orchid;
+    border-radius: 50%;
+}
+.message__text {
+    width: 661px;
+    height: 172px;
+    background-image: url('../img/message-box-left.svg');
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-right: 30px;
+    margin: 0 20px;
 
+}
+.message__text--right {
+    background-image: url('../img/message-box-right.svg');
+}
+.message__cite {
+    font-family: 'Roboto Slab';
+    color: var(--color-text-gray);
+    font-size: 1.375rem;
+    line-height: 1.5;
+}
+.message__cite::before {
+    content: '“ ';
+}
+.message__cite::after {
+    content: ' ”';
+}
 
 
 
